@@ -707,6 +707,25 @@ h4, .zeta-header {
     text-shadow: 0 1px 0 white;
     width: 100%; }
 
+/*
+	footer
+*/
+.l-footer {
+  background: #222;
+  border-top: 1px solid #111111;
+  bottom: 0;
+  position: fixed;
+  text-align: right;
+  width: 100%; }
+  .l-footer a {
+    color: #666;
+    float: right;
+    font-family: arial;
+    font-size: 0.7em;
+    margin-right: 2.5%;
+    padding: 2px 0;
+    text-decoration: none; }
+
 /* intro container */
 .intro-content {
   float: left;
@@ -747,6 +766,49 @@ form.lyric-search {
     padding: 10px;
     box-sizing: border-box;
     width: 20%; }
+
+.search-title {
+  float: left;
+  text-align: center;
+  width: 100%;
+  font-size: 1.3em;
+  line-height: 2.1em;
+  margin: 0.2em 0 0 0; }
+
+/* Song container */
+.song {
+  background: #fff;
+  border: 1px solid #aaaaaa;
+  box-sizing: border-box;
+  margin: 0 0 10px 0;
+  float: left;
+  width: 100%; }
+  .song hgroup {
+    border-bottom: 1px solid #aaaaaa;
+    box-sizing: border-box;
+    float: left;
+    padding: 1%;
+    width: 100%; }
+    .song hgroup h3 {
+      float: left;
+      line-height: 1em;
+      margin-top: 0.2em;
+      width: 60%; }
+    .song hgroup h4 {
+      float: right;
+      line-height: 1.8em;
+      text-align: right;
+      width: 40%; }
+  .song p {
+    box-sizing: border-box;
+    float: left;
+    padding: 0 2.5%;
+    width: 70%; }
+  .song a {
+    float: right;
+    margin: 2.5% 1%;
+    text-align: right;
+    width: 25%; }
 
 /*  Modules  
 	Write all the modular SCSS.
@@ -814,6 +876,39 @@ form.lyric-search {
   /* Don't forget your Retina CSS! */
   body {
     background-size: 72px 72px; } }
+/* this is for the header on the search page when a search has been made */
+.l-header.is-searched {
+  padding: 5px 0; }
+  .l-header.is-searched h1 {
+    font-size: 1em;
+    float: left;
+    margin: 3px 0 0 0;
+    text-align: left;
+    width: 50%; }
+  .l-header.is-searched .intro-content {
+    display: none; }
+  .l-header.is-searched .form-holder {
+    float: right;
+    width: 50%; }
+    .l-header.is-searched .form-holder form {
+      background: none;
+      border: 0;
+      padding: 0; }
+      .l-header.is-searched .form-holder form label {
+        float: left;
+        font-size: 0.9em;
+        line-height: 1em;
+        margin: 7px 0 0 0;
+        width: 10%; }
+      .l-header.is-searched .form-holder form input {
+        font-size: 0.7em;
+        padding: 5px;
+        width: 79%; }
+      .l-header.is-searched .form-holder form button {
+        font-size: 0.7em;
+        padding: 5px;
+        width: 10%; }
+
 /*  Libs  
 	This is any CSS that has come from a plugin.
 	Suach as fancybox, pretty photo, etc.

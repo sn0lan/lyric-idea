@@ -1,0 +1,49 @@
+/* this is for the header on the search page when a search has been made */
+
+.l-header.is-searched{
+	padding: 5px 0;
+
+	h1{
+		font-size: 1em;
+		float: left;
+		margin: 3px 0 0 0;
+		text-align: left;
+		width: 50%;
+	}
+
+	.intro-content{
+		display: none;
+	}
+
+	.form-holder{
+		float: right;
+		width: 50%;
+
+		form{
+			background: none;
+			border: 0;
+			padding: 0;
+
+			label{
+				float: left;
+				font-size: 0.9em;
+				line-height: 1em;
+				margin: 7px 0 0 0;
+				width: 10%;
+			}
+
+			input{
+				font-size: 0.7em;
+				padding: 5px;
+				width: 79%;
+			}
+
+			button{
+				font-size: 0.7em;
+				padding: 5px;
+				width: 10%;
+			}
+
+		}
+	}
+}
