@@ -24,6 +24,9 @@ define([
 
 		showResults: function(){
 			var search = this;
+
+			$('.l-header').addClass('is-searched');
+
 			//check to see if exists to stop errors
 			if(this.collection){
 				
@@ -41,7 +44,7 @@ define([
 			var searchInput = search.$el[0].children[1].value;
 
 			var onDataHandler = function(collection, items){
-				search.showResults();			
+				search.showResults();
 			}
 
 			search.collection = new LyricCollection([], searchInput);

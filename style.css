@@ -700,12 +700,16 @@ h4, .zeta-header {
   padding: 50px 0;
   width: 100%; }
   .l-header h1 {
-    color: #666;
     float: left;
     margin-bottom: 30px;
     text-align: center;
     text-shadow: 0 1px 0 white;
     width: 100%; }
+    .l-header h1 a {
+      color: #666;
+      text-decoration: none; }
+      .l-header h1 a:hover {
+        color: #555; }
 
 /*
 	footer
@@ -716,7 +720,8 @@ h4, .zeta-header {
   bottom: 0;
   position: fixed;
   text-align: right;
-  width: 100%; }
+  width: 100%;
+  z-index: 20; }
   .l-footer a {
     color: #666;
     float: right;
@@ -781,8 +786,10 @@ form.lyric-search {
   border: 1px solid #aaaaaa;
   box-sizing: border-box;
   margin: 0 0 10px 0;
+  position: relative;
   float: left;
-  width: 100%; }
+  width: 100%;
+  z-index: 10; }
   .song hgroup {
     border-bottom: 1px solid #aaaaaa;
     box-sizing: border-box;
@@ -804,6 +811,8 @@ form.lyric-search {
     float: left;
     padding: 0 2.5%;
     width: 70%; }
+    .song p em {
+      color: #f00; }
   .song a {
     float: right;
     margin: 2.5% 1%;
@@ -878,7 +887,10 @@ form.lyric-search {
     background-size: 72px 72px; } }
 /* this is for the header on the search page when a search has been made */
 .l-header.is-searched {
-  padding: 5px 0; }
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  z-index: 20; }
   .l-header.is-searched h1 {
     font-size: 1em;
     float: left;

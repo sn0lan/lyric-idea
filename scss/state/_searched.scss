@@ -2,6 +2,9 @@
 
 .l-header.is-searched{
 	padding: 5px 0;
+	position: fixed;
+	top: 0;
+	z-index: 20;
 
 	h1{
 		font-size: 1em;
