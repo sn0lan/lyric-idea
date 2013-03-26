@@ -17,6 +17,29 @@
 	}
 }
 
+/*
+	footer
+*/
+
+.l-footer{
+	background: #222;	
+	border-top: 1px solid #111;
+	bottom: 0;
+	position: fixed;
+	text-align: right;
+	width: 100%;
+
+	a{
+		color: #666;
+		float: right;
+		font-family: arial;
+		font-size: 0.7em;
+		margin-right: 2.5%;
+		padding: 2px 0;
+		text-decoration: none;
+	}
+}
+
 /* intro container */
 
 .intro-content{
@@ -68,5 +91,61 @@ form.lyric-search{
 		padding: 10px;
 		box-sizing: border-box;
 		width: 20%;
+	}
+}
+
+.search-title{
+	float: left;
+	text-align: center;
+	width: 100%;
+	font-size: 1.3em;
+	line-height: 2.1em;
+	margin: 0.2em 0 0 0;
+}
+
+/* Song container */
+
+.song{
+	background: #fff;
+	border: 1px solid #aaa;
+	box-sizing: border-box;
+	margin: 0 0 10px 0;
+	float: left;
+	width: 100%;
+
+	hgroup{
+		border-bottom: 1px solid #aaa;
+		box-sizing: border-box;
+		float: left;
+		padding: 1%;
+		width: 100%;
+
+		h3{
+			float: left;
+			line-height: 1em;
+			margin-top: 0.2em;
+			width: 60%;
+		}
+
+		h4{
+			float: right;
+			line-height: 1.8em;
+			text-align: right;
+			width: 40%;
+		}
+	}
+
+	p{
+		box-sizing: border-box;
+		float: left;
+		padding: 0 2.5%;
+		width: 70%;
+	}
+
+	a{
+		float: right;
+		margin: 2.5% 1%;
+		text-align: right;
+		width: 25%;
 	}
 }
