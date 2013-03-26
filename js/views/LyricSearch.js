@@ -12,7 +12,7 @@ define([
 		template: _.template(lyricSearchResultsTemplate),
 			
 		events:{
-			'click .search-btn' : 'search'
+			'click .search-btn' : 'search',
 		},		
 
 		initialize: function(){
@@ -22,7 +22,8 @@ define([
 		render: function(){
 			//check to see if exists to stop errors
 			if(this.collection){
-				this.searched.html(this.template({ lyricSearchResults: this.collection.models[0].attributes.data }))
+				//Output search results
+				this.searched.html(this.template({ lyricSearchResults: this.collection.models[0].attributes.data }));
 			}
 		},
 		
@@ -44,7 +45,7 @@ define([
 				dataType: 'json'
 			});
 
-		},
+		}
 
 	});
 
