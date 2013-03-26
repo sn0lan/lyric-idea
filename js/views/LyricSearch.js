@@ -20,10 +20,15 @@ define([
 		},
 
 		render: function(){
+		},
+
+		showResults: function(){
+			var search = this;
 			//check to see if exists to stop errors
 			if(this.collection){
+				
 				//Output search results
-				this.searched.html(this.template({ lyricSearchResults: this.collection.models[0].attributes.data }));
+				this.searched.html(this.template({ lyricSearchResults: this.collection.models[0].attributes.data }));				
 			}
 		},
 		
@@ -33,7 +38,7 @@ define([
 			var searchInput = search.$el[0].children[1].value;
 
 			var onDataHandler = function(collection, items){
-				search.render();			
+				search.showResults();			
 			}
 
 			search.collection = new LyricCollection([], searchInput);
