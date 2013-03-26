@@ -28,7 +28,10 @@ define([
 			if(this.collection){
 				
 				//Output search results
-				this.searched.html(this.template({ lyricSearchResults: this.collection.models[0].attributes.data }));				
+				this.searched.html(this.template({ 
+					lyricSearchResults: this.collection.models[0].attributes.data,
+					searchTerm: search.$el[0].children[1].value
+				}));
 			}
 		},
 		

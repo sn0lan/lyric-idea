@@ -16,19 +16,26 @@
 	</head>
 
 	<body>
-	<div class="container">
-		<header>
-			<h1>Lyric Idea</h1>
-		</header>
+		<header class='l-header'>
+			<div class="container">
+				<h1>SteadWatch</h1>
+			
+				<section class='intro-content'>
+					<h2 class='into-text'>Steadman trying to be vague again by posting lyrics?</h2>
+					<p>Find out what sort of tripe he is listening to by pasting his tweet in the box below</p>
+				</section>
 
-		<form class='lyric-search' method='post'>
-			<label for="Lyric">Lyric</label><input type="text" name="lyric" value="" id="lyric" placeholder='Lyric' />
-			<button class='search-btn'>Go</button>
-		</form>
+				<div class='form-holder'>
+					<form class='lyric-search' method='post'>
+						<label for="Lyric">Lyric</label><input type="text" name="lyric" value="" id="lyric" placeholder='Lyric' />
+						<button class='search-btn'>Go</button>
+					</form>
+				</div>
+
+			</div>
+		</header><!-- end of l-header -->
 
 		<div class='lyric-search-results'></div>
 
-		<div id="songs-container"></div>
-	</div>
 	</body>
 </html>

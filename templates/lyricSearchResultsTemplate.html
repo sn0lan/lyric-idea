@@ -1,4 +1,16 @@
-<h2>Search results from lyric</h2>
-<% _.each(lyricSearchResults, function(song){ %>
-	<a href='' class='song'><%= song.artist.name %> - <%= song.title %></p>
-<% });%>
+<h2>Search results for <em><%= searchTerm %></em></h2>
+<div class='container'
+	<% _.each(lyricSearchResults, function(song){ %>
+
+		<section class='song'>
+			
+			<% console.log(song); %>
+
+			<h3><%= song.title %></h3>
+			<h4><%= song.artist.name %></h4>
+			<p><%= song.context %></p>
+			<a href='http://youtube.com/results?search_query=<%= song.artist.name %> <%= song.title %>' class='song'>View On Youtube</a>
+		</section>
+
+	<% });%>
+</div>
