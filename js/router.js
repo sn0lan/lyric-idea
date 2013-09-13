@@ -2,7 +2,7 @@ define([
 	'jquery', 
 	'underscore', 
 	'backbone', 
-	'views/lyricSearch'
+	'views/LyricSearch'
 	
 ], function($, _, Backkbone, LyricSearch){
 	var AppRouter = Backbone.Router.extend({
